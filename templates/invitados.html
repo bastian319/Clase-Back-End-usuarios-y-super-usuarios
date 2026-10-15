@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Invitado - Solo Lectura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #7f8c8d; /* Color grisáceo para diferenciar que es modo invitado */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .badge {
+            background-color: #e67e22;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logout-btn {
+            background-color: #c0392b;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .logout-btn:hover { background-color: #962d22; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Mi Sitio Web</h1>
+            <span>Bienvenido, Invitado</span>
+        </div>
+        <div>
+            <span class="badge">MODO SOLO LECTURA</span>
+            <a href="index.html" class="logout-btn" style="margin-left: 15px;">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Contenido Público / Observación</h2>
+        <p>Estás visualizando este contenido bajo una cuenta de <strong>Invitado</strong>. Puedes leer la información disponible, pero no tienes permisos para modificar datos, rellenar formularios ni realizar acciones administrativas.</p>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+        <h3>Información del sistema:</h3>
+        <p>Aquí se mostrarían los reportes, tablas o artículos de la plataforma en formato estático.</p>
+    </main>
+
+</body>
+</html>
